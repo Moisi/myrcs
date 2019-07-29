@@ -198,6 +198,24 @@ function fixup()
     EDITOR=true git commit --fixup $1 && git rebase -i $1~ --autosquash
 }
 
+function google()
+{
+	gg="https://www.google.com/search?q=";
+	ff="firefox";
+	if [[ $1 ]]; then
+		"$ff" -new-tab "$gg"$(echo ${1//[^a-zA-Z0-9]/+});
+	else
+		echo 'Usage: google "[seach term]"';
+	fi
+}
+
+alias goglr='googler'
+
+function mkcdir() {
+    mkdir $1
+    cd $1
+}
+
 alias gsr='git --no-pager show -s --abbrev-commit --abbrev=12 --pretty=format:"%h (\"%s\")%n"'
 alias cdw='cd ~/dev'
 alias groot='cd $(git root)'
