@@ -41,7 +41,7 @@
 	root = rev-parse --show-toplevel
 
 [include]
-	path = .gitconfig_gmail
+#	path = .gitconfig_gmail
 #	path = .gitconfig_intel
 
 [color "diff-highlight"]

@@ -111,10 +111,10 @@ function! ToggleSyntastic()
 endfunction
 
 " Abbreviations
-iabbrev @@ Ramon Fried <rfried.dev@gmail.com>
-iabbrev rby Reviewed-By: Ramon Fried <rfried.dev@gmail.com>
-iabbrev aby Acked-By: Ramon Fried <rfried.dev@gmail.com>
-iabbrev tby Tested-By: Ramon Fried <rfried.dev@gmail.com>
+iabbrev @@ Ohad Moisi <ohad.moisi@gmail.com>
+iabbrev rby Reviewed-By: Ohad Moisi <ohad.moisi@gmail.com>
+iabbrev aby Acked-By: Ohad Moisi <ohad.moisi@gmail.com>
+iabbrev tby Tested-By: Ohad Moisi <ohad.moisi@gmail.com>
 
 " -------------------------------------
 " Local vimrc settings
@@ -152,7 +152,7 @@ let g:NERDTreeHijackNetrw=0
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-let g:UltiSnipsSnippetDirectories=["/home/rfried/myrcs/private_snippets"]
+let g:UltiSnipsSnippetDirectories=["~/myrcs/private_snippets"]
 
 " ------------------
 " YCM Configuration
