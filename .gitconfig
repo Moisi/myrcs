@@ -7,20 +7,21 @@
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore
-	pager = diff-so-fancy | less --tabs=4 -RFX
+#	pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
-	default = matching
+#	default = matching
 [diff]
-	tool = vimdiff
+	tool = meld
 [difftool]
 	prompt = false
 [merge]
-	tool = vimdiff
+	tool = meld
 	conflictstyle = diff3
 [mergetool]
-	prompt = false
+	cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+#	prompt = false
 [rebase]
-	autoStash = yes
+#	autoStash = yes
 [alias]
 	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
