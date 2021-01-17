@@ -81,6 +81,9 @@ nmap	 <F7> :TagbarToggle<CR>
 nnoremap <F8> :call ToggleSyntastic()<CR>
 nnoremap <silent> <F11> :YRShow<CR>
 
+nnoremap <F4> :set nu!<CR>
+nnoremap <F5> :set wrap!<CR>
+
 set pastetoggle=<F2>
 
 " Automatic tag loading
@@ -296,3 +299,9 @@ try
     set undofile
 catch
 endtry
+
+let @x = 'A;^['
+let @c = 'i.c_str()^['
+let @s = 'iSS(^[f"f"a)^[F"F"FS'
+let @p = 'oprintf("%s %d\n", __func__, __LINE__);'
+let &colorcolumn="80,".join(range(120,999),",")
